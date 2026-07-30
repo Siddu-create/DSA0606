@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CO1 AT2 Q13' inline='true' name='federated.07k0qj51ducmpv126nwsx02uo2tw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CO1 AT2 Q13' name='textscan.13eb3in0dsr78515wfk8618tocph'>
+            <connection class='textscan' directory='C:/Users/sidda/Downloads/DATA HANDLING ASSESSMENTS' filename='CO1 AT2 Q13.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Battery Life]' />
+            <value name='[Display Quality]' />
+            <value name='[Price]' />
+            <value name='[Speed]' />
+            <value name='[Weight]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[CO1 AT2 Q13.csv].[Battery_Life]' />
+              <field name='[CO1 AT2 Q13.csv].[Display_Quality]' />
+              <field name='[CO1 AT2 Q13.csv].[Price]' />
+              <field name='[CO1 AT2 Q13.csv].[Speed]' />
+              <field name='[CO1 AT2 Q13.csv].[Weight]' />
+            </group>
+          </groups>
+          <relation connection='textscan.13eb3in0dsr78515wfk8618tocph' name='CO1 AT2 Q13.csv' table='[CO1 AT2 Q13#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Laptop' ordinal='0' />
+              <column datatype='integer' name='Battery_Life' ordinal='1' />
+              <column datatype='integer' name='Speed' ordinal='2' />
+              <column datatype='integer' name='Display_Quality' ordinal='3' />
+              <column datatype='integer' name='Price' ordinal='4' />
+              <column datatype='integer' name='Weight' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO1 AT2 Q13.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Laptop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Laptop]</local-name>
+            <parent-name>[CO1 AT2 Q13.csv]</parent-name>
+            <remote-alias>Laptop</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[CO1 AT2 Q13.csv_C5CB988F503A4C3A8FCF9CA0F5194C4B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO1 AT2 Q13.csv_C5CB988F503A4C3A8FCF9CA0F5194C4B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO1 AT2 Q13.csv_C5CB988F503A4C3A8FCF9CA0F5194C4B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Attribute' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Score' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='CO1 AT2 Q13.csv' datatype='table' name='[__tableau_internal_object_id__].[CO1 AT2 Q13.csv_C5CB988F503A4C3A8FCF9CA0F5194C4B]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO1 AT2 Q13.csv' id='CO1 AT2 Q13.csv_C5CB988F503A4C3A8FCF9CA0F5194C4B'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Battery Life]' />
+                  <value name='[Display Quality]' />
+                  <value name='[Price]' />
+                  <value name='[Speed]' />
+                  <value name='[Weight]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[CO1 AT2 Q13.csv].[Battery_Life]' />
+                    <field name='[CO1 AT2 Q13.csv].[Display_Quality]' />
+                    <field name='[CO1 AT2 Q13.csv].[Price]' />
+                    <field name='[CO1 AT2 Q13.csv].[Speed]' />
+                    <field name='[CO1 AT2 Q13.csv].[Weight]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.13eb3in0dsr78515wfk8618tocph' name='CO1 AT2 Q13.csv' table='[CO1 AT2 Q13#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='string' name='Laptop' ordinal='0' />
+                    <column datatype='integer' name='Battery_Life' ordinal='1' />
+                    <column datatype='integer' name='Speed' ordinal='2' />
+                    <column datatype='integer' name='Display_Quality' ordinal='3' />
+                    <column datatype='integer' name='Price' ordinal='4' />
+                    <column datatype='integer' name='Weight' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Question 13 - 192424271</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CO1 AT2 Q13' name='federated.07k0qj51ducmpv126nwsx02uo2tw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07k0qj51ducmpv126nwsx02uo2tw'>
+            <column datatype='string' name='[Laptop]' role='dimension' type='nominal' />
+            <column caption='Attribute' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Score' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Laptop]' derivation='None' name='[none:Laptop:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.07k0qj51ducmpv126nwsx02uo2tw].[sum:Pivot Field Values:qk]' />
+              <text column='[federated.07k0qj51ducmpv126nwsx02uo2tw].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07k0qj51ducmpv126nwsx02uo2tw].[none:Laptop:nk]</rows>
+        <cols>[federated.07k0qj51ducmpv126nwsx02uo2tw].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{AB70289C-29BF-429A-AAA4-2F67D21AEA59}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07k0qj51ducmpv126nwsx02uo2tw].[sum:Pivot Field Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07k0qj51ducmpv126nwsx02uo2tw].[none:Laptop:nk]</field>
+            <field>[federated.07k0qj51ducmpv126nwsx02uo2tw].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C005FE20-589B-441D-AE19-B5B4C6D20B4B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAPkklEQVR4nO3dWW9bZ3rA8f/hvkmk9s0SZUm2JEe245lJMkEymSQTpJgiBVpkMECLAkUv
+      +gXaL5Cv0IsCvWl70QaYNkiTJgWKttM0SxMnsV1btqxdolZroUhRFHfynLcX8sQjb5lJdXRk
+      vs8PMGxT9NFzLP7J1zJeHkMppRBCUy6nBxDCSRKAOFGOe0HiOdbPJrQ3ef1Ldq0Ip5vcBLuG
+      2ViaZmR4BIBEYon2qEGoOY7LMADY3VihFGihMxZEYeB2He1ztgQgjo9SrGymqZopSsvbsGMy
+      ffmXqPwOn01t0d7UwPcHI3zwb5cJtTRzti3IwvIWlVgvRnKePCH++A/fPNJliyyBxLGxqjnS
+      6SyFTJrGzjiG4aWnpx0MFy+89BOCHgXKwOP14armuTk9T3dfH24UuWwGry/AUS+QDPkukHCE
+      UpjKwoWBMoxvljxKKZQCw1AoZeByGZimictloBS4jngJJAEIrckSSGhNAhBakwCE1iQAobUT
+      HoCiVq1SrdXu3aLUNz8ex7JMlIJarYZl1tjP5e0e9regqFYrmKaFZZqY1uFzUZZJtVp76J+s
+      VasP/ZhSikqlSq1WO/b/Tf2ulLKoVCpYd+e1zNoDfxd2c7/11ltvHetn/C29+4u3mbh5k7ZT
+      caanZ1G5O/znlUVmbn5FJNbK5soihi/EbnKDje00DRE/uUKVG19+Rqx3gKlb48xc+5SFtEUl
+      u40/0kTA5/T//5n8w9/9LfOLSwR8LrIVxdLCPH6/l7m5OfyU+OLWKuXMBiZuihWTYn6foA/e
+      eed9Jm9P0NzWic+r2MsWmJm8RSjawMf/fZnCfoqPP/6EULiBcGOEvcw+oWDA4fN9uOLWHH/z
+      7i/Z2UkR8RmsLiXI1QzW1jdw1wqs72RpaYraOoPTj4RvValUwOUjk9xgfX6cfGecUGMr5XKS
+      sNrlg8+u0tWRYG8/z7Pnevnww5s89+rrVCsVlIKNjQ1igQixUIXPr03RtZnj915/0enTorW7
+      n3PdEWYTKxj+HXaSKcq5XRra2/nsy3ECsU42tvaZWFwj6DIJhpv58aU+muJjxN13+OSjL3np
+      5UFuTmdwmxnWv9jHADa3UviDQSLuHB/+8/uMPPcTWpqdPttHsEzcHh/RSID/+Oh/eObcKa4t
+      7/A7Tw/w/j/+PVUrSPzP/gSfjSOc+ABampsoKw/Z/RzRlnY6evqYnVlioLeTjZzBULyb+OAg
+      lapidLiPy7f+iVPNIdLRCF99cZmW9nZaAm5inT1sp/MMDg84fUqAgVXaY2rLw6Xh02wVwV3N
+      UyxVWJta4KmREfK5PFtJ6O7qxtyep/PcRbxNYdzZf+eT1U1e/uElJm4tEgk2UnBF6GyKggkG
+      JsXsDirSSyb7NefiJ/XRD+5AAy+8+CPOx5tobGymrcGiK6W4OTnP6MgIlqfR9jW6oQ5gmqbN
+      n8p+2dQmmYqHvq5Wp0f5TnaTm3gbW4n4f/15STE5Mcno2FMYd28p5rO4/BH8nkc/PEq5XdZS
+      BYbiPbbO/KT7JoBisXhkB93cy/MXb390ZMcTzvBG/ASbG5wew1YeAMMwCIVCR3fQYo21bOnI
+      jiec4cMgHH7yVwaPc8K/DSqEvSQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJ
+      QGhNAhBakwCE1iQAoTUJQGjtUAC14j67+w9ujFHKIp8vPPIg89OTFMoPfxeDeuJ2GYydasXv
+      dTs9im0CXjdP9bTiOeL34DxJ4rEw7eGDNwo4tCe4uLPExG6MsQ6DKzcmGBzsZ25xlZZYI59/
+      Pc4br73AbGKVs4P9zCVW6D87xkhfKzeufkGy7Of5i4OOnNBxOdPZxFJyj/On2ria2HR6HFuc
+      6WhmNZ1luKuZuf2T9FYyR8MAOsNBapZiO196cAlULpdYv7NOLZ9mam6R7tMjbCXTnDkzRGJp
+      me+N9XH92i16BoZIzC+QXl8g72pkcXbSgdM5XgtbGQY7mo78Ig0nycL2Lmc6mzGMb7/vk8jt
+      MqhYFtbdN1o/9AoQaD6FZ3ECf1cH7X1nCZBncmaO1176Mavzk3T1jDK3sML3xvq4NrPIaz9+
+      AYoZfv6zn5FO3kEBdfr3BoDLMKhZFjeWt5wexTZul4tcqcLcZhpX5GS+n9D/R81SZMtVStWD
+      rZ6PfXt0s1rBcnnwul2/0e2/spLK8uZfvneEYwsn+BqDhDtiTo9hq8e+L5Db6+Nh/9x71O1C
+      PGnqdzErxG9AAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhN
+      AhBakwCE1my5TnA46OOnr47YcegTY69UY3Jr3+kxbDXWFeH14Ranx7CNwq4LZRvg8dT3lhm3
+      28Ko473BcLA90veYaxE/6ZRSsgQSepMAhNYkAKE1CUBoTQIQWpMAhNYkAKE1CUBoTQIQWpMA
+      hNYkAKE1CUBoTQIQWpMAhNYkAKG1QwGY1RL5UvWBOymlME3zoQeoVUokEglyxbI9E54g5Xye
+      zblZdlaWnR7FNhGfh/PtTUR89mwVOQkWp2ZYW1wC7tsQU9ic48bdq0Rem5jh3PAgUzMLtLe1
+      8F+ffs2bb7zG5GyCsXNDTM3MMzT6NA3VNcanMxSujPNHP/99J87n2PjDYYLRKGb1wSeJehEL
+      +Ah63cQCPqdHsYVZM5kdn2Ds2e8DD1kCKaVI7+5CIcX/3pqkc3CM5ZU1hoeHmZ6e4ZkLvXz+
+      6Vd0DwwzeXsCgMzuLuGGyPGeiUPS62s095xyegzbNPp9zKayNPrrMwAM6Iz3ktraBu4LwBft
+      ILs+Ta5kEmzqorspwPj1a1x67kViIRcjo8Ncn7zDhXO93LgxztOXLhGKddHRFCQe73fidI5d
+      15lhp0ew1VwqS2vIz1wq6/QotnC73XTHe+npjwPfcpXISjGH6Q4S9LkfcnuA4CPWialiib+6
+      NnGEY588mWKVic363hR/oSvCT0freFO8Uo/fFO8LPnxZ86jbhXjSyLdBhdYkAKE1CUBoTQIQ
+      WpMAhNYkAKE1CUBoTQIQWpMAhNYkAKE1CUBoTQIQWpMAhNYkAKE1ezZ+KqiYli2HPilq1iO3
+      UdQNS6n6/joqmwIo1Uy+XsnYcWhxjJK5KldW8k6PYRu5SJ7QngQgtCYBCK1JAEJrEoDQmgQg
+      tCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrhwKoFbOkssUH7qQsi/39
+      3EMPoJTFxI2rLK1v2zPhCeI2DEZbo3V9BcWAx81oa5SAx/3td34CWZbF1uIC24lF4L4dYcWd
+      ZSbvXiXy6+u3GBiIM59YoznawOWrt/jdV59nfmmNoYE480urxM+M0WRukzYjDLZEHTmh49QS
+      8uNxuTjVGGZ6Z8/pcWzREQ7gcbnoCAcomfV3NUzDMGjti7Nya5w2Tj+4BCqViqyurlLLp5lZ
+      WKL79DDJVIahoUGWV1a5NNbHzRu36Tk9xPLi3Yq8Xgzj2M/l2IW9HnYKJbyu+l05BjxukoVS
+      3b4CGIbB9uI8XWcPLnZ46CJ5llmjVKnhQqGA9PosuUAv/e0NmNUqHo+LmmmRubPIfqCT/vYo
+      Pq+bfKGI3+fH6z14QVnP5vnTf/nckRO0k9swvgm9XjfFe1z3nslaQl7OtNXf9eDMahWX5+Cx
+      emgJ5HJ7CAXv3dQzdPHeB33eg5+A0NDYoQNGwmGbRj1ZTKWgPh/336jXsH+d23vwWJZN8UJ7
+      EoDQmgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtGbL
+      5laPy6C70WfHoU8M04JCtY6voAgYSpHOFJwewz7qvh1hR6VQq3B5K3HUhz1RMsUatzcffAOB
+      erKytsv45B2nx7CNgSyBhOYkAKE1CUBoTQIQWpMAhNYkAKE1CUBoTQIQWpMAhNYkAKE1CUBo
+      TQIQWpMAhNYkAKE1CUBoTQIQWjsUQGV/h/Xk/gN3UlaNre2dg1/ft3+mmE3y4Qf/yuLqlo1j
+      ngyWZXHrq6tkdlJOj2KbQibDnZlpdjfqdyPM+VNt9DY3APdtiSxnNljcjREyM3zy+WVODw6w
+      tJakMRxg/PYcr/zwIisbW/R0dbK6maQ7PsxAY572gQvcvPoF/b1/UNcvKYnpWSrlMpZl1e15
+      hmIx9tM7+IIhyNXf5ZJ8Hjcul0FvSyNr6f0Hv46p5BaT09Nglljd2Katu5dixaS/r5dkKsXw
+      QBfLiTXauntIJZMAJDfXqSo39X6hSH8gQHd/H2uJJadHsY2yLIrZLOFYzOlRbFGpmWSLZbzu
+      g4f+oVeAUMcgw7llWpp76egdxChsMbdX4dVXXyG5vkxTaxuraxs8c8HDxLbJyz96Fo9VZqi4
+      St/pH9R9AKcG+llLLDH01DkqTg9jE6UU3SOjTo9hK0spriY2AdkU/53Jpvgnn2yKF9qTAITW
+      JAChNQlAaE0CEFqTAITWJAChNQlAaE0CEFqTAITWJAChNQlAaE0CEFqTAITWJAChNVuuElkq
+      1bhybdmOQ58YhYrF+l69bos5ULYUPV1Rp8ewjYFNAeznSrz9i6t2HFoco9OjPfzglaecHsM2
+      SilZAgm9SQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBC
+      axKA0JoEILR2KIDS7h3m13cfuJMyqySWVw9+fd8FZfLpdd555z2mFlZtHNNZ0UiAZ87FCfg8
+      PH/+NF0tjU6PdOTamiJcPNNDrCHI8+dPE2sIOj2SLSzLZHN+luXx68B9O8KquRQbuzGajD3e
+      fe8Dzl96mrVklqDHxXxijecuniGZ3iXWGGNrL0d79wBjHSZFy0tDJOTICR2HXKGMUor+rhau
+      Ta0w0t/BRirr9FhHKr1XIN7ZTE9rlKtTK5ztbaPg9FA2cLnctPT2sTU/f/D7++8wc3ucK9du
+      0N7eTCqzj9cXxB+O0tEao1gsEW0MkdvP4fUHqFUP9sQqpTBN83jP5BhFQn6626JYSjHS3+H0
+      OLaINQTpbotiGAaj/R2Uq/X79bwzM0338Ahw30XylGWSyxfweb1UqjVyyUV2jA7OxdspFfL4
+      A37y+SKl3XWSVozR/k4MLPL5Aj5/AL/PC8DyZpo3/vyvnTk7G3g9LnxeD6VKjaDPS75U5ugv
+      Legsn9eN1+OmVK4S9PvIFct1uyfYrNVwezwopQ4vgQyXm4aGgyto+wPQ0HCBrrsfC0ciAESj
+      XqLRRu49D977M/WqWrOo1g5e7XLFssPT2KNSNancfdav13P8Fbfn3sNevgsktPZ/OxmaK+cA
+      xmUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

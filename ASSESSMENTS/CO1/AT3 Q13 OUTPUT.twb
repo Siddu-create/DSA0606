@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CO1 AT3 Q13' inline='true' name='federated.0fgbmcq12j70jt1916p1a1wjxoco' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CO1 AT3 Q13' name='textscan.1djnov01tv064k135ucvb1sgs0f8'>
+            <connection class='textscan' directory='C:/Users/sidda/Downloads/DATA HANDLING ASSESSMENTS/CO1' filename='CO1 AT3 Q13.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1djnov01tv064k135ucvb1sgs0f8' name='CO1 AT3 Q13.csv' table='[CO1 AT3 Q13#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Week' ordinal='0' />
+            <column datatype='string' name='Day_of_Week' ordinal='1' />
+            <column datatype='integer' name='Sales' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO1 AT3 Q13.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Week]</local-name>
+            <parent-name>[CO1 AT3 Q13.csv]</parent-name>
+            <remote-alias>Week</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO1 AT3 Q13.csv_B4338B8A0AD741E0B76AF915926B63F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_of_Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day_of_Week]</local-name>
+            <parent-name>[CO1 AT3 Q13.csv]</parent-name>
+            <remote-alias>Day_of_Week</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[CO1 AT3 Q13.csv_B4338B8A0AD741E0B76AF915926B63F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[CO1 AT3 Q13.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO1 AT3 Q13.csv_B4338B8A0AD741E0B76AF915926B63F3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+      <column caption='CO1 AT3 Q13.csv' datatype='table' name='[__tableau_internal_object_id__].[CO1 AT3 Q13.csv_B4338B8A0AD741E0B76AF915926B63F3]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO1 AT3 Q13.csv' id='CO1 AT3 Q13.csv_B4338B8A0AD741E0B76AF915926B63F3'>
+            <properties context=''>
+              <relation connection='textscan.1djnov01tv064k135ucvb1sgs0f8' name='CO1 AT3 Q13.csv' table='[CO1 AT3 Q13#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Week' ordinal='0' />
+                  <column datatype='string' name='Day_of_Week' ordinal='1' />
+                  <column datatype='integer' name='Sales' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Weekly Sales Pattern</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CO1 AT3 Q13' name='federated.0fgbmcq12j70jt1916p1a1wjxoco' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fgbmcq12j70jt1916p1a1wjxoco'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Week]' derivation='None' name='[none:Week:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0fgbmcq12j70jt1916p1a1wjxoco].[none:Day_of_Week:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Monday&quot;</bucket>
+              <bucket>&quot;Tuesday&quot;</bucket>
+              <bucket>&quot;Wednesday&quot;</bucket>
+              <bucket>&quot;Thursday&quot;</bucket>
+              <bucket>&quot;Friday&quot;</bucket>
+              <bucket>&quot;Saturday&quot;</bucket>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.0fgbmcq12j70jt1916p1a1wjxoco].[none:Week:qk]' />
+              <text column='[federated.0fgbmcq12j70jt1916p1a1wjxoco].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fgbmcq12j70jt1916p1a1wjxoco].[sum:Sales:qk]</rows>
+        <cols>[federated.0fgbmcq12j70jt1916p1a1wjxoco].[none:Day_of_Week:nk]</cols>
+      </table>
+      <simple-id uuid='{FC7AED61-C8CA-4687-B6CF-BFA658505807}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fgbmcq12j70jt1916p1a1wjxoco].[none:Day_of_Week:nk]</field>
+            <field>[federated.0fgbmcq12j70jt1916p1a1wjxoco].[none:Week:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E3E9D3E5-2EFC-4AAD-9240-61859DD96A67}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
