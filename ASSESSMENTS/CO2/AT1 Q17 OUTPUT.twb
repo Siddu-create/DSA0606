@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CO2 AT1 Q17' inline='true' name='federated.1twgman0peokf211mnu2k07mswie' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CO2 AT1 Q17' name='textscan.03ogehm14qwrez1d9v8qe0bs8n30'>
+            <connection class='textscan' directory='C:/Users/sidda/Downloads/DATA HANDLING ASSESSMENTS/CO2' filename='CO2 AT1 Q17.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03ogehm14qwrez1d9v8qe0bs8n30' name='CO2 AT1 Q17.csv' table='[CO2 AT1 Q17#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='X' ordinal='0' />
+            <column datatype='integer' name='Y' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO2 AT1 Q17.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[CO2 AT1 Q17.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO2 AT1 Q17.csv_155811E9D4DB4C94B34F2D40E54CAB17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[CO2 AT1 Q17.csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO2 AT1 Q17.csv_155811E9D4DB4C94B34F2D40E54CAB17]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CO2 AT1 Q17.csv' datatype='table' name='[__tableau_internal_object_id__].[CO2 AT1 Q17.csv_155811E9D4DB4C94B34F2D40E54CAB17]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO2 AT1 Q17.csv' id='CO2 AT1 Q17.csv_155811E9D4DB4C94B34F2D40E54CAB17'>
+            <properties context=''>
+              <relation connection='textscan.03ogehm14qwrez1d9v8qe0bs8n30' name='CO2 AT1 Q17.csv' table='[CO2 AT1 Q17#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='X' ordinal='0' />
+                  <column datatype='integer' name='Y' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Cartesian Coordinate Plot - 192424271</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CO2 AT1 Q17' name='federated.1twgman0peokf211mnu2k07mswie' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1twgman0peokf211mnu2k07mswie'>
+            <column datatype='integer' name='[X]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Y]' role='measure' type='quantitative' />
+            <column-instance column='[X]' derivation='Sum' name='[sum:X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Y]' derivation='Sum' name='[sum:Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1twgman0peokf211mnu2k07mswie].[sum:X:qk]' scope='cols' value='X Coordinate' />
+            <format attr='title' class='0' field='[federated.1twgman0peokf211mnu2k07mswie].[sum:Y:qk]' scope='rows' value='Y Coordinate' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <text column='[federated.1twgman0peokf211mnu2k07mswie].[sum:Y:qk]' />
+              <lod column='[federated.1twgman0peokf211mnu2k07mswie].[sum:X:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1twgman0peokf211mnu2k07mswie].[sum:Y:qk]</rows>
+        <cols>[federated.1twgman0peokf211mnu2k07mswie].[sum:X:qk]</cols>
+      </table>
+      <simple-id uuid='{7692CAB8-6086-467E-99D4-EE5B5A0AF0C1}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BBFD813E-C7D5-4440-B0E1-49E0AAAD5EFE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

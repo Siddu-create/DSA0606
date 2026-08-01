@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CO2 AT1 Q16' inline='true' name='federated.1evxh321231i6715o2pw50dod5uk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CO2 AT1 Q16' name='textscan.05e83n604edyts15k970c1qrduz3'>
+            <connection class='textscan' directory='C:/Users/sidda/Downloads/DATA HANDLING ASSESSMENTS/CO2' filename='CO2 AT1 Q16.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05e83n604edyts15k970c1qrduz3' name='CO2 AT1 Q16.csv' table='[CO2 AT1 Q16#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Day' ordinal='0' />
+            <column datatype='string' name='Time_Slot' ordinal='1' />
+            <column datatype='integer' name='Visits' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO2 AT1 Q16.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[CO2 AT1 Q16.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[CO2 AT1 Q16.csv_338A836F6C48401695237D07B4F07FFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Slot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time_Slot]</local-name>
+            <parent-name>[CO2 AT1 Q16.csv]</parent-name>
+            <remote-alias>Time_Slot</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[CO2 AT1 Q16.csv_338A836F6C48401695237D07B4F07FFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Visits]</local-name>
+            <parent-name>[CO2 AT1 Q16.csv]</parent-name>
+            <remote-alias>Visits</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CO2 AT1 Q16.csv_338A836F6C48401695237D07B4F07FFA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Time Slot' datatype='string' name='[Time_Slot]' role='dimension' type='nominal' />
+      <column caption='CO2 AT1 Q16.csv' datatype='table' name='[__tableau_internal_object_id__].[CO2 AT1 Q16.csv_338A836F6C48401695237D07B4F07FFA]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO2 AT1 Q16.csv' id='CO2 AT1 Q16.csv_338A836F6C48401695237D07B4F07FFA'>
+            <properties context=''>
+              <relation connection='textscan.05e83n604edyts15k970c1qrduz3' name='CO2 AT1 Q16.csv' table='[CO2 AT1 Q16#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Day' ordinal='0' />
+                  <column datatype='string' name='Time_Slot' ordinal='1' />
+                  <column datatype='integer' name='Visits' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Website Visits Heatmap - 192424271</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CO2 AT1 Q16' name='federated.1evxh321231i6715o2pw50dod5uk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1evxh321231i6715o2pw50dod5uk'>
+            <column datatype='string' name='[Day]' role='dimension' type='nominal' />
+            <column caption='Time Slot' datatype='string' name='[Time_Slot]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Visits]' role='measure' type='quantitative' />
+            <column-instance column='[Day]' derivation='None' name='[none:Day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time_Slot]' derivation='None' name='[none:Time_Slot:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Visits]' derivation='Sum' name='[sum:Visits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1evxh321231i6715o2pw50dod5uk].[sum:Visits:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1evxh321231i6715o2pw50dod5uk].[sum:Visits:qk]' />
+              <text column='[federated.1evxh321231i6715o2pw50dod5uk].[sum:Visits:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1evxh321231i6715o2pw50dod5uk].[none:Time_Slot:nk]</rows>
+        <cols>[federated.1evxh321231i6715o2pw50dod5uk].[none:Day:nk]</cols>
+      </table>
+      <simple-id uuid='{9551A1BC-5F50-4588-86D2-8C56D29A8D96}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1evxh321231i6715o2pw50dod5uk].[sum:Visits:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1evxh321231i6715o2pw50dod5uk].[none:Day:nk]</field>
+            <field>[federated.1evxh321231i6715o2pw50dod5uk].[none:Time_Slot:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F8AAF06-4254-4D67-82C6-00EEA2526B61}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
