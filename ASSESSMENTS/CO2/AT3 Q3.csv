@@ -1,0 +1,7 @@
+Month,Holdings,Monthly_Return,Asset_Class,Allocation
+January,120000,4.5,Equity,35
+February,180000,-2.8,Debt,20
+March,250000,6.2,Gold,15
+April,450000,-5.5,Real Estate,12
+May,750000,8.0,Cash,10
+June,1200000,-7.2,Mutual Funds,8
